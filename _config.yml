@@ -1,1 +1,14 @@
-markdown: redcarpet 
+#Page Settings
+title: Gary Blog
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+# Author Settings
+author: 
+  name: Gary 
+  about: I am a web developer focusing on front-end development. Always hungry to keep learning. # add description
+  github: SDriedFish # add your Github handle
+
+# Build Settings
+markdown: kramdown
+paginate: 5
+paginate_path: "/page/:num"
