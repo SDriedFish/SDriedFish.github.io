@@ -917,7 +917,7 @@ table tfoot td {
   width: 240px;
   height: 100%;
   padding: 20px 10px;
-  background-color: #ffffff;
+  background-color: #c1c1c1;
 }
 
 .about {
@@ -1083,7 +1083,9 @@ footer .copyright {
   text-align: center;
   margin: 0;
 }
-
+footer .copyright a {
+  text-decoration: none;
+}
 .post {
   width: 100%;
   max-width: 100%;

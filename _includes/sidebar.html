@@ -1,0 +1,20 @@
+<aside class="sidebar">
+    <header>
+        <div class="about">
+            <div class="cover-author-image">
+                <a href="{{site.baseurl}}/">
+                    <img src="{{site.baseurl}}/assets/img/{% if site.author.author-img %}{{site.author.author-img}}{% endif %}"
+                        alt="{{site.author.name}}">
+                </a>
+            </div>
+            <div class="author-name">{{site.author.name}}</div>
+        </div>
+    </header>
+    <!-- End Header -->
+    <footer>
+        <section class="contact">
+                {% include social.html %}
+        </section>   
+        {% include copyright.html %}   
+    </footer>
+</aside>
