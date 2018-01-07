@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html>
-{% include head.html %}
-<body>
+  {% include header.html %}
+  <body>
     {% include sidebar.html %}
-    <div class="wrapper">
-        {{ content }}
-    </div>
 
+    <main id="main">
+      {{ content }}
+    </main>
+
+    <button id="menu">
+      <span id="menu-icons"></span>
+    </button>
     {% include baiduanalytics.html %}
-</body>
+  </body>
+  {% include scripts.html %}
 </html>
