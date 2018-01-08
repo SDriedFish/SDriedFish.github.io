@@ -49,7 +49,11 @@ $(function() {
       afterPjax();
       NProgress.done();
       main.scrollTop(0).addClass('fadeIn');
-      menu.add(sidebar).removeClass('open');
+      // only remove open in small screen
+      console.log($(window).width());
+      if($(window).width() <= 767) {
+        menu.add(sidebar).add(main).removeClass('open');
+      }     
       {% if site.google_analytics %}
       ga('set', 'location', window.location.href);
       ga('send', 'pageview');
