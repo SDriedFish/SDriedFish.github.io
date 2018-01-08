@@ -78,16 +78,10 @@ h1 + h2, h2 + h3, h3 + h4, h4 + h5, h5 + h6
 
   blockquote
     position: relative
-    margin: 0 0 $post-paragraph-spacing 2em
-    font-style: italic
-    &:before
-      @extend %icon
-      @extend %icon-quote
-      position: absolute
-      top: 0
-      left: -1.5em
-      z-index: 1
-      transform: rotate(180deg)
+    padding: .5em 1em
+    margin: 0 0 $post-paragraph-spacing 2em   
+    border-left: 5px solid #eeeeee
+
 
   img
     display: block
