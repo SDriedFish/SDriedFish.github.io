@@ -19,3 +19,5 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jemoji
+sass:
+  style: compressed

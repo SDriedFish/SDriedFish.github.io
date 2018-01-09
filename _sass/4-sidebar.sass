@@ -5,7 +5,7 @@
   position: absolute
   top: 0
   bottom: 0
-  left: 0
+  left: -$sidebar-width
   z-index: 20
   width: $sidebar-width
   background: $sidebar-bg
@@ -20,6 +20,8 @@
     float: left
     width: $sidebar-right-width
     height: 100%
+  &.open
+    transform: translateX(100%)
 
 
 // Sidebar Left
@@ -156,8 +158,9 @@
   position: relative
   float: left
   clear: both
+  width: 100%
   margin: 5px 0
-  padding: 0 15px 0 32px
+  padding: 0 10px 0 28px
   font-size: $toc-font-size
   line-height: $toc-line-height
   white-space: nowrap
@@ -169,7 +172,7 @@
   &:before
     position: absolute
     top: 2px
-    left: 12px
+    left: 10px
     z-index: 1
     @extend %icon
     @extend %icon-bullet
@@ -180,3 +183,10 @@
     color: $toc-bullet-read
   &:hover:before
     animation: joggle .6s linear
+
+  .title
+    font-size: 14px
+
+  .date
+    font-size: 12px
+    float: right
