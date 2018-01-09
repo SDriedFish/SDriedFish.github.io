@@ -31,7 +31,6 @@ h1 + h2, h2 + h3, h3 + h4, h4 + h5, h5 + h6
   padding-top: 2em
   font-size: $post-font-size
   line-height: $post-line-height
-  text-shadow: 1px 1px 0 #fff
 
   &-title
     margin: 0 0 $post-paragraph-spacing * .75
@@ -89,8 +88,8 @@ h1 + h2, h2 + h3, h3 + h4, h4 + h5, h5 + h6
     border: $post-img-border-width solid $post-img-border-color
 
   code
-    font-family: $post-code-font
-    font-size: .9em
+    font: $post-code-font
+    letter-spacing: 0.015em
 
   *:not(pre) > code
     padding: 0 .25em
@@ -102,7 +101,7 @@ h1 + h2, h2 + h3, h3 + h4, h4 + h5, h5 + h6
     margin-bottom: $post-paragraph-spacing
     padding: 1em
     line-height: 1.3
-    background: $post-code-block-bg
+    background: $post-code-block-bg 
     overflow: auto
     -webkit-overflow-scrolling: touch
     &::-webkit-scrollbar

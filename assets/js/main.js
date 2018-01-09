@@ -50,7 +50,6 @@ $(function() {
       NProgress.done();
       main.scrollTop(0).addClass('fadeIn');
       // only remove open in small screen
-      console.log($(window).width());
       if($(window).width() <= 767) {
         menu.add(sidebar).add(main).removeClass('open');
       }     
