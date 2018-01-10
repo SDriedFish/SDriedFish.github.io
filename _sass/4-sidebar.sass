@@ -39,8 +39,20 @@
 
 
 #sidebar-social
-  padding: 0 $social-icon-outer-padding 3vh
+  padding: 0 0 2vh 0
   text-align: center
+  position: absolute
+  bottom: 0
+  width: $sidebar-left-width
+  color: $tag-color 
+
+  .copyright
+    font-size: $small-font-size
+    a
+      text-decoration: none
+      color: $gradient-start
+   
+      
 
 .sidebar-social-icon
   display: inline-block
@@ -185,8 +197,8 @@
     animation: joggle .6s linear
 
   .title
-    font-size: 14px
+    font-size: $title-font-size
 
   .date
-    font-size: 12px
+    font-size: $small-font-size
     float: right

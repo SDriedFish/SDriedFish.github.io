@@ -27,8 +27,12 @@
     <a href="mailto:{{ site.email }}" class="sidebar-social-icon email"></a>
 {% endif %}
 
-<!-- {% if site.author.qrcode %}
+{% if site.author.qrcode %}
 <div id="qrcode" >
     <img src="{{site.baseurl}}/assets/img/{{site.author.qrcode}}" style="margin: 0 auto;display: block;" width="150" height="150" alt="">
 </div>
-{% endif %} -->
+{% endif %}
+<div class="copyright">
+  <p>{{site.time | date: '%Y'}} &copy; {{site.author.name}}</p>
+  <P>Powered by <a href="https://jekyllrb.com/"  target="_blank">Jekyll</a> Theme by <a href="https://github.com/P233/3-Jekyll"  target="_blank">3-Jekyll</a></P>
+</div>
