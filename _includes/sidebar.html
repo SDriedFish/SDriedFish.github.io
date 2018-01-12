@@ -1,48 +1,46 @@
 <aside id="sidebar" class="open">
-    <div id="sidebar-left">
-      <a id="sidebar-avatar" href="{{site.baseurl}}/">
-        <img id="sidebar-avatar-img" alt="{{ site.tittle }}" src="{{ "/assets/img/avatar.jpg" | prepend: site.baseurl }}"/>
-      </a> 
-	  
+  <div id="sidebar-left">
+    <a id="sidebar-avatar" href="{{site.baseurl}}/">
+      <img id="sidebar-avatar-img" alt="{{ site.tittle }}" src="{{ " /assets/img/avatar.jpg " | prepend: site.baseurl }}"/>
+    </a>
+    <div id="sidebar-social">
+      {% include social.html %}
+    </div>
     <ul id="sidebar-tags">
       <li class="sidebar-tag active" data-filter="all">全部文章</li>
-      {% if site.filter == 'category' %}
-        {% for category in site.categories %}
-          <li class="sidebar-tag" data-filter="{{ category | first }}">{{ category | first }}</li>
-        {% endfor %}
-      {% elsif site.filter == 'tag' %}
-        {% for tag in site.tags %}
-          <li class="sidebar-tag" data-filter="{{ tag | first }}">{{ tag | first }}</li>
-        {% endfor %}
+      {% if site.filter == 'category' %} 
+      {% for category in site.categories %}
+      <li class="sidebar-tag" data-filter="{{ category | first }}">{{ category | first }}</li>
+      {% endfor %} 
+      {% elsif site.filter == 'tag' %} 
+      {% for tag in site.tags %}
+      <li class="sidebar-tag" data-filter="{{ tag | first }}">{{ tag | first }}</li>
+      {% endfor %} 
       {% endif %}
     </ul>
-	
-      <div id="sidebar-social">
-        {% include social.html %}
-      </div> 
+  </div>
+
+  <div id="sidebar-right">
+    <div id="search-box">
+      <input id="search-input" type="text" placeholder="Search" />
     </div>
-  
-    <div id="sidebar-right">
-      <div id="search-box">
-        <input id="search-input" type="text" placeholder="Search" />
-      </div>
-  
-      <nav id="toc">
-        {% if site.filter == 'category' %}
-          {% for post in site.posts %}
-            <a class="toc-link" data-tags="{{ post.categories | join: ' ' }}" href="{{ post.url }}">
-              <span class="title">{{ post.title }}</span>
-              <span class="date">{{ post.date | date: "%y/%m/%d" }}</span>
-            </a>
-          {% endfor %}
-        {% elsif site.filter == 'tag' %}
-          {% for post in site.posts %}
-            <a class="toc-link" data-tags="{{ post.tags | join: ' ' }}" href="{{ post.url }}">
-              <span class="title">{{ post.title }}</span>
-              <span class="date">{{ post.date | date: "%y/%m/%d" }}</span>
-            </a>
-          {% endfor %}
-        {% endif %}
-      </nav>
-    </div>
+
+    <nav id="toc">
+      {% if site.filter == 'category' %} 
+      {% for post in site.posts %}
+      <a class="toc-link" data-tags="{{ post.categories | join: ' ' }}" href="{{ post.url }}">
+        <span class="title">{{ post.title }}</span>
+        <span class="date">{{ post.date | date: "%y/%m/%d" }}</span>
+      </a>
+      {% endfor %} 
+      {% elsif site.filter == 'tag' %} 
+      {% for post in site.posts %}
+      <a class="toc-link" data-tags="{{ post.tags | join: ' ' }}" href="{{ post.url }}">
+        <span class="title">{{ post.title }}</span>
+        <span class="date">{{ post.date | date: "%y/%m/%d" }}</span>
+      </a>
+      {% endfor %} 
+      {% endif %}
+    </nav>
+  </div>
 </aside>

@@ -1,9 +1,6 @@
 ---
 layout: post
-title:  Welcome to Jekyll!
-categories: Jekyll 
-tags: Jekyll 
-keywords: Jekyll
+title:  首页
 date: 2012-08-25 
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
