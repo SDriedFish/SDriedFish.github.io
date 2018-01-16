@@ -18,6 +18,31 @@ CSS层叠样式表(Cascading Style Sheets)是一种用来表现HTML（标准通�
 4. 用户样式表；用户还可以指定风格行为来查看一个或多个文档，例如用户可能有视力障碍，想设置字体大小对所有网页的访问是双倍的正常大小，以便更容易阅读。
 5. 浏览器样式表；浏览器也会有自己的一套默认渲染行为，如果html中没有为标签设置样式，则浏览器会按照自己的样式来显示。
 
+给定选择器的多个样式规则冲突时，当根据样式表的来源的优先级顺序：内联样式 > 内部样式 > 外部样式 > 用户自定义样式 > 浏览器样式；具有较高优先级的风格规则将覆盖较低优先级的相同风格规则。下面是举例说明：
+
+```css
+/* main.css */
+p{color:bule;}
+```
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        p{color:red;} 
+    </style>
+</head>
+<body>
+    <p>1234567890</p>   
+</body>
+</html>
+```
+
 
 
 
