@@ -22,7 +22,10 @@ CSS层叠样式表(Cascading Style Sheets)是一种用来表现HTML（标准通�
 
 ```css
 /* main.css */
-p{color:bule;}
+ p{
+    color:blue;
+    font-size:24px;
+ }
 ```
 
 ```html
@@ -42,11 +45,11 @@ p{color:bule;}
 </body>
 </html>
 ```
-
-
-
+打开chrome开发者工具可以发现元素p的样式为`color:red;font-size:24px;`，因为嵌入式样式表中**p**元素没有*font-size*的样式，而外部样式表中**p**元素有*font-size*的样式，层叠对这两个样式来源进行叠加使得**p**元素有*font-size*样式，而样式来源优先级内部样式 > 外部样式使得`color:red`生效。
+![][cascade-demo]
 
 ### 权重
+CSS规范为不同类型的选择器定义了特殊性权重，特殊性权重越高，样式会被优先应用。
 ![CSS权重][weight]
 
 * 第一等：代表内联样式，如：style=""，权值为1000
@@ -94,3 +97,4 @@ p{color:bule;}
 
 [weight]:{{site.baseurl}}/assets/img/CSS/casede/css-weight.jpg  
 [demo]:{{site.baseurl}}/assets/img/CSS/casede/weight-demo.jpg  
+[cascade-demo]:{{site.baseurl}}/assets/img/CSS/casede/cascade-demo.jpg  
