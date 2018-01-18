@@ -14,14 +14,9 @@ layout: default
 
 <div class="post-share">
   <div class="container">
-    <div class="jiathis_style_24x24">
-      <a class="jiathis_button_fb"></a>
-      <a class="jiathis_button_twitter"></a>
-      <a class="jiathis_button_linkedin"></a>
-      <a class="jiathis_button_tsina"></a>
-      <a class="jiathis_button_weixin"></a>
-    </div>
-    <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+    <a href="https://twitter.com/share?url={{ page.url | prepend: site.baseurl | prepend: site.url }}&text={{ page.title }}" target="_blank" class="post-share-icon twitter"></a>
+    <a href="https://www.evernote.com/clip.action?url={{ page.url | prepend: site.baseurl | prepend: site.url }}&title={{ page.title }}" target="_blank" class="post-share-icon evernote"></a>
+    <a href="http://service.weibo.com/share/share.php?url={{ page.url | prepend: site.baseurl | prepend: site.url }}&title={{ page.title }}" target="_blank" class="post-share-icon weibo"></a>
   </div>
 </div>
 
