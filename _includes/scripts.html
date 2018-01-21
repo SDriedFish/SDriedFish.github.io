@@ -1,4 +1,41 @@
-<script src="{{ "/assets/js/jquery-2.1.3.min.js" | prepend: site.baseurl }}"></script>
-<script src="{{ "/assets/js/jquery.pjax.js" | prepend: site.baseurl }}"></script>
-<script src="{{ "/assets/js/nprogress.js" | prepend: site.baseurl }}"></script>
-<script src="{{ "/assets/js/main.js" | prepend: site.baseurl }}"></script>
+<script src="{{ " /assets/js/jquery-2.1.3.min.js " | prepend: site.baseurl }}"></script>
+<script src="{{ " /assets/js/jquery.pjax.js " | prepend: site.baseurl }}"></script>
+<script src="{{ " /assets/js/nprogress.js " | prepend: site.baseurl }}"></script>
+<script src="{{ " /assets/js/main.js " | prepend: site.baseurl }}"></script> {% if site.flowchart == 'true' %}
+<script src="{{ " /assets/js/flowchart.js " | prepend: site.baseurl }}"></script>
+<script>
+    var flowcharts = document.getElementsByClassName('flow')
+    for (var i = 0; i < flowcharts.length; i++) {
+        var flow = flowcharts[i]
+        try {
+            var diagram = flowchart.parse(flow.textContent)
+            flow.id = 'flow_' + i
+            flow.innerHTML = ''
+            diagram.drawSVG(flow.id)
+        } catch (error) {
+            flow.innerHTML = '<pre class="language-text">' + error.toString() + '</pre>'
+        }
+    }
+</script> {% endif %}
+
+<!-- mathjax config similar to math.stackexchange -->
+<script type="text/x-mathjax-config">
+    var mathId = document.getElementById("post-content"); //选择公式识别范围
+    MathJax.Hub.Config({
+        showProcessingMessages: false, //关闭js加载过程信息
+        messageStyle: "none", //不显示信息
+        extensions: ["tex2jax.js"],
+        jax: ["input/TeX", "output/HTML-CSS"],
+        tex2jax: {
+            inlineMath:  [ ["$", "$"] ], //行内公式选择$
+            displayMath: [ ["$$","$$"] ], //段内公式选择$$
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre','code','a'] //避开某些标签
+        },
+        "HTML-CSS": {
+            availableFonts: ["STIX","TeX"], //可选字体
+            showMathMenu: false //关闭右击菜单显示
+        }
+    });
+    MathJax.Hub.Queue(["Typeset",MathJax.Hub,mathId]);
+</script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>

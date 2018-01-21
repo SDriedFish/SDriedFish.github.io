@@ -13,6 +13,11 @@ author:
   facebook: # add your Facebook handle
 # Build Settings
 markdown: kramdown
+kramdown:
+  input:  GFM
+  extensions:
+    - footnotes
+flowchart: 'true' #support flowchart 
 filter: 'category' # Choose 'tag' or 'category' as filter in sidebar.
 permalink: /:year/:month/:day/:title.html   #博文的固定链接
 plugins:
