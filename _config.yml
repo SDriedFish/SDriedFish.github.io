@@ -1,7 +1,7 @@
 #Base Settings
 title: 周明的博客
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://blog.zhouming.work" # the base hostname & protocol for your site
+url: http://blog.zhouming.work # the base hostname & protocol for your site
 # Author Settings
 author: 
   name: Gary 
@@ -21,10 +21,7 @@ kramdown:
 flowchart: 'true' #support flowchart 
 filter: 'category' # Choose 'tag' or 'category' as filter in sidebar.
 permalink: /:year/:month/:day/:title.html   #博文的固定链接
-plugins:
-  - jekyll-sitemap
-  - jekyll-paginate
-  - jemoji
+
 sass:
   style: compressed
 
