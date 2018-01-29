@@ -2,4 +2,4 @@
 User-agent: *
 Disallow: 
 Disallow: /bin/
-Sitemap: http://blog.zhouming.work/pages/sitemap.xml
+Sitemap: http://blog.zhouming.work/sitemap.xml
