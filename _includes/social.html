@@ -1,3 +1,10 @@
+{% if site.author.rssurl %}
+<a href="{{ site.author.rssurl | prepend: site.baseurl }}" class="sidebar-social-icon feed"></a>
+{% endif %}
+
+{% if site.author.email %}
+    <a href="mailto:{{ site.email }}" class="sidebar-social-icon email"></a>
+{% endif %}
 
 {% if site.author.twitter %}
   <a href="https://twitter.com/{{ site.author.twitter }}" class="sidebar-social-icon twitter" target="_blank"></a>
@@ -21,10 +28,6 @@
 
 {% if site.author.dribbble %}
   <a href="https://dribbble.com/{{ site.author.dribbble }}" class="sidebar-social-icon dribbble" target="_blank"></a>
-{% endif %}
-
-{% if site.author.email %}
-    <a href="mailto:{{ site.email }}" class="sidebar-social-icon email"></a>
 {% endif %}
 
 

@@ -7,6 +7,7 @@ author:
   name: Gary 
   about: I am a web developer focusing on front-end development. Always hungry to keep learning. # add description
   github: SDriedFish # add your Github handle
+  rssurl: /pages/rss.xml 
   author-img: gary.jpg
   email: 540195111@qq.com
   qrcode: qrcode.jpg
