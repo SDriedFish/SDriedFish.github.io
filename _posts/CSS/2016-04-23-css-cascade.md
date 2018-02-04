@@ -92,9 +92,6 @@ CSS规范为不同类型的选择器定义了特殊性权重，特殊性权重�
 以上代码生成的效果为：
 ![][demo]
 
-
-
-
 [weight]:{{site.baseurl}}/assets/img/CSS/casede/css-weight.jpg  
 [demo]:{{site.baseurl}}/assets/img/CSS/casede/weight-demo.jpg  
 [cascade-demo]:{{site.baseurl}}/assets/img/CSS/casede/cascade-demo.jpg  
