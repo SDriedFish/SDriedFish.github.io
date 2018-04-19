@@ -37,3 +37,14 @@ content: "port is ${server.port}"
 
 # 数据库
 使用**JPA**
+```yml
+  jpa:
+    hibernate:
+      ddl-auto: create #create每次运行会重新创建update第一次运行创建表，再次运行保留数据
+```yml
+
+jps使用
+```java
+personRepository.findAll();
+personRepository.save(person);
+```
