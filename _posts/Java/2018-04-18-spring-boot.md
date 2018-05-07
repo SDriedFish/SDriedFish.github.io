@@ -110,6 +110,15 @@ jpa使用api操作数据库
 personRepository.findAll();
 personRepository.save(person);
 ```
+**JPA写语句**
+JPQL语句与HQL(hibernate)类似
+```java
+   @Query("select t from person t where t.name = ?1")
+   List<Person> findByPersonName(String myName);
+```
 
 # 自定义SpringMVC的配置
 增加一个拦截器，这个时候就得通过继承WebMvcConfigurerAdapter然后重写父类中的方法进行扩展。
+
+#集成mybatis
+PageHelper可以实现分页查询
