@@ -120,5 +120,5 @@ JPQL语句与HQL(hibernate)类似
 # 自定义SpringMVC的配置
 增加一个拦截器，这个时候就得通过继承WebMvcConfigurerAdapter然后重写父类中的方法进行扩展。
 
-#集成mybatis
+# 集成mybatis
 PageHelper可以实现分页查询
