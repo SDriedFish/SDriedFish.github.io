@@ -14,6 +14,7 @@ idea旗舰版安装spring initailzr,选择spring-boot的web模块，自动生成
 1. idea的run启动
 2. 命令 mvn spring-boot:run
 3. mvn install 打包，然后用java命令启动 ```java -jar manager-0.0.1-SNAPSHOT.jar```
+>spring-boot-devtools进行热部署
   
 # Spring的java配置
 Spring的Java配置方式是通过 @Configuration 和 @Bean 这两个注解实现的：
