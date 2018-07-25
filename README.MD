@@ -1,7 +1,7 @@
 **我的博客地址**
 [https://blog.zhouming.work/][1]
 
-## 使用
+#### 使用
 1. fork库到自己的github
 2. 修改名字为：username.github.io
 3. 设置 _config.yml，将需要添加的社交帐号填入对应设置
@@ -9,7 +9,7 @@
 5. 在_posts中的目录结构添加博客文件即可
 
 
-## 增加内容
+#### 增加内容
 * 增加文章搜索功能
 * 增加站点统计
 * 支持mathLaTeX
