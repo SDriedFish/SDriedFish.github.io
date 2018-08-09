@@ -1,25 +1,26 @@
 ---
 layout: post
-title:  首页
 keywords: jekyll
-date: 2012-08-25 
+date: 2016-03-25 
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+## 关于我
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+我叫周明，3年web工程师，偏重Web前端，偶尔写写后端。技术上熟悉web前端、node、java，博客的内容主要也是这些方向，平时喜欢折腾新事物，热爱摄影和读书。
 
-Jekyll also offers powerful support for code snippets:
+## 对博客的理解
 
-```ruby
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-```
+最初开发遇到问题就去网上找解决方案，在笔记本上做笔记，然后运用到项目中去，但过段时间经常会忘记笔记在哪，随着项目越多越大，这样的问题就更加凸显。于是就有个简单的想法：工作中学到的知识及解决问题的思路,整理记录下来,方便自己日后工作用到的时候能够翻翻,快速的找到。写博客可以加深对技术点的理解
+对某个技术点运用的不熟,当你通过博客的形式写出来,这个过程中遇到不懂的知识点,你就会查阅相关的资料,弄明白它。同时分享出来能给人借鉴。
 
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll’s dedicated Help repository][jekyll-help].
+我把自己的博客分成这几类：前端、后端、测试、生活，将自己的一些心得与遇到的坑写在相应分类中。博客内容分享可以记录自己的心酸路程和加深自己对知识点的理解。
 
-[jekyll]:      http://jekyllrb.com
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-help]: https://github.com/jekyll/jekyll-help
+刚工作时在CSDN上，过了半年账号被盗，博客文章无法恢复。于是想到自己利用jekyll+github搭建个人博客。
+
+## 博客平台
+
+这个博客通过 [Jekyll][1]{:target='_blank'}生成，部署在 [Github][2]{:target='_blank'}，主题基于 [3-Jekyll][3]{:target='_blank'}修改生成。如果你喜欢这样的Blog，可以直接[fork][4]{:target='_blank'}到自己的github。
+
+[1]: http://jekyllrb.com/
+[2]: https://pages.github.com
+[3]: https://github.com/P233/3-Jekyll
+[4]: https://github.com/SDriedFish/SDriedFish.github.io
