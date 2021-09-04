@@ -7,6 +7,8 @@ $(function() {
       sidebar = $('#sidebar'),
       main    = $('#main'),
       menu    = $('#menu'),
+      button     = $('#menu-icons.icon-arrow'),
+      content    = $('.post.container'),
       x1, y1;
 
   // run this function after pjax load.
@@ -82,10 +84,23 @@ $(function() {
     $(this).addClass('active').siblings().removeClass('active');
   });
 
-
-  // Menu
-  menu.on('click', function() {
+  // Enable fullscreen.
+  $('#menu.js-fullscreen').on('click', function() {
     $(this).add(sidebar).toggleClass('open');
+    if (button.hasClass('fullscreen')) {
+      sidebar.removeClass('fullscreen');
+      main.removeClass('fullscreen');
+      button.removeClass('fullscreen');
+      content.delay(300).queue(function(){
+        $(this).removeClass('fullscreen').dequeue();
+      });
+    } else {
+      sidebar.addClass('fullscreen');
+      main.addClass('fullscreen');
+      button.addClass('fullscreen');
+      content.delay(200).queue(function(){
+        $(this).addClass('fullscreen').dequeue();
+      });
+    }
   });
-
 });

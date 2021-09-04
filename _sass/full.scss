@@ -1,0 +1,66 @@
+$grey: #7D8B99;
+$green: #2EB695;
+$border: #e5e8ec;
+
+$fs-bg: transparentize($border, .5);
+$fs-fg: $grey; // fs: fullscreen
+$fs-hover: $green;
+$fullscreen-width:1080px;
+
+.post.container.fullscreen {
+    max-width: $fullscreen-width;
+    margin: 0 auto;
+}
+
+#main.fullscreen{
+    width:100%
+}
+
+
+/*---------------------------------*\
+   Fullscreen Style
+\*---------------------------------*/
+
+#sidebar.fullscreen {
+    @media screen and (min-device-width: 1281px) {
+        margin-left: -$sidebar-width;
+    }
+
+    @media screen and (max-device-width: 1280px) {
+        -webkit-transform: translateX(-$sidebar-width);
+        -moz-transform: translateX(-$sidebar-width);
+        -ms-transform: translateX(-$sidebar-width);
+        -o-transform: translateX(-$sidebar-width);
+        transform: translateX(-$sidebar-width);
+    }
+}
+
+
+.post.container {
+    padding: 0 5% 30px;
+
+    &.fadeIn {
+        -webkit-animation: fadeIn .3s;
+        -moz-animation: fadeIn .3s;
+        -ms-animation: fadeIn .3s;
+        -o-animation: fadeIn .3s;
+        animation: fadeIn .3s;
+    }
+
+    &.fadeOut {
+        -webkit-animation: fadeOut .2s;
+        -moz-animation: fadeOut .2s;
+        -ms-animation: fadeOut .2s;
+        -o-animation: fadeOut .2s;
+        animation: fadeOut .2s;
+    }
+
+    @media screen and (min-width: 1281px) {
+        max-width: 100%;
+    }
+
+    @media screen and (max-width: 1280px) {
+        max-width: $fullscreen-width;
+        margin: 0 auto;
+    }
+}
