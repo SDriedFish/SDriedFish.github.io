@@ -1,9 +1,9 @@
 ---
 layout: post
 title: CSS小知识
-categories: CSS
-tags: CSS
-keywords: CSS
+categories: 前端
+tags: 前端
+keywords: CSS小知识
 date: 2016-04-23 
 ---
 CSS层叠样式表(Cascading Style Sheets)是一种用来表现HTML（标准通用标记语言的一个应用）或XML（标准通用标记语言的一个子集）等文件样式的计算机语言。cascade说明层叠的概念是很重要的，层叠就是浏览器对多个样式来源进行叠加，优先级是叠加的实现方式，而这些是构成什么选择器胜出的关键因素。
