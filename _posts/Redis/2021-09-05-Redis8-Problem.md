@@ -100,7 +100,7 @@ https://docs.spring.io/spring-boot/docs/2.3.12.RELEASE/reference/html/spring-boo
 
 `CONFIG set protected-mode no`  设置容许客户端连接
 
-```JAVA
+```java
 //高级API
 //        stringRedisTemplate.opsForValue().set("hello01","china");
 //
