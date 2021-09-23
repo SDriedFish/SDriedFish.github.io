@@ -1,8 +1,8 @@
 ---
 layout: post
 title: ZooKeeper2-原理
-categories: ZooKeeper
-tags: ZooKeeper
+categories: BigData
+tags: BigData
 keywords: ZooKeeper2-原理
 date: 2021-09-11
 ---

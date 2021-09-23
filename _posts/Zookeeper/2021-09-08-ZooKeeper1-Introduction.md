@@ -1,8 +1,8 @@
 ---
 layout: post
 title: ZooKeeper1-介绍
-categories: ZooKeeper
-tags: ZooKeeper
+categories: BigData
+tags: BigData
 keywords: ZooKeeper1-介绍
 date: 2021-09-08
 ---
